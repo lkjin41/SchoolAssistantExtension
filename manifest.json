@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "SchoolAssistant",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://schools.school.mosreg.ru/*"],
+      "js": ["schoolmosreg.js"]
+    },
+    {
+      "matches": ["https://resh.edu.ru/*"],
+      "js": ["resh.min.js"]
+    },
+    {
+      "matches": ["https://mo.imumk.ru/*"],
+      "js": ["imumk.min.js"]
+    },
+    {
+      "matches": ["https://obrazovaka.ru/*"],
+      "js": ["obrazovaka.min.js"]
+    }
+  ]
+}
