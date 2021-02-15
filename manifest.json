@@ -9,11 +9,11 @@
     },
     {
       "matches": ["https://resh.edu.ru/*", "http://resh.edu.ru/*"],
-      "js": ["resh.js"]
+      "js": ["resh.min.js"]
     },
     {
       "matches": ["https://mo.imumk.ru/*", "http://mo.imumk.ru/*"],
-      "js": ["imumk.min.js"]
+      "js": ["imumk.js"]
     },
     {
       "matches": ["https://obrazovaka.ru/*", "http://obrazovaka.ru/*"],
