@@ -7,3 +7,8 @@ For that, it uses scripts from my repos.
 
 Also it have some improvements for https://schools.school.mosreg.ru/ (by default it has GDZ for my school curricula and schedule but you can change it in schoolmosreg.js):
 ![1](https://github.com/granlovestea/SchoolAssistantExtension/blob/main/schoolmosreg1.png)
+
+Installation:
+
+1. Enable dev mode in chrome://extensions/
+2. Press "Load unpacked" and choose the extension folder
