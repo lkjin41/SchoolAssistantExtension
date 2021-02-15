@@ -6,4 +6,4 @@ Since the last release, it can show answers for [Resh](https://resh.edu.ru) / [O
 For that, it uses scripts from my repos.
 
 Also it have some improvements for https://schools.school.mosreg.ru/:
-![1](https://github.com/granlovestea/SchoolAssistant/blob/main/schoolmosreg1.png)
+![1](https://github.com/granlovestea/SchoolAssistantExtension/blob/main/schoolmosreg1.png)
