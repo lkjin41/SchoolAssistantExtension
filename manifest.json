@@ -4,19 +4,19 @@
   "version": "0.1",
   "content_scripts": [
     {
-      "matches": ["https://schools.school.mosreg.ru/*"],
+      "matches": ["https://schools.school.mosreg.ru/*", "http://schools.school.mosreg.ru/*"],
       "js": ["schoolmosreg.js"]
     },
     {
-      "matches": ["https://resh.edu.ru/*"],
+      "matches": ["https://resh.edu.ru/*", "http://resh.edu.ru/*"],
       "js": ["resh.min.js"]
     },
     {
-      "matches": ["https://mo.imumk.ru/*"],
+      "matches": ["https://mo.imumk.ru/*", "http://mo.imumk.ru/*"],
       "js": ["imumk.min.js"]
     },
     {
-      "matches": ["https://obrazovaka.ru/*"],
+      "matches": ["https://obrazovaka.ru/*", "http://obrazovaka.ru/*"],
       "js": ["obrazovaka.min.js"]
     }
   ]
