@@ -9,7 +9,7 @@
     },
     {
       "matches": ["https://resh.edu.ru/*", "http://resh.edu.ru/*"],
-      "js": ["resh.min.js"]
+      "js": ["resh.js"]
     },
     {
       "matches": ["https://mo.imumk.ru/*", "http://mo.imumk.ru/*"],
