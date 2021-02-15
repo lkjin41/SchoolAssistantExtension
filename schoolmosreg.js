@@ -9,8 +9,17 @@ let schedule = [
 ];
 
 let gdzBySubjects = {
-  "Англ. язык": "http://google.ru",
-  "Алгебра": "http://yandex.ru"
+  "Англ. язык": "https://gdz.ru/class-9/english/reshebnik-spotlight-9-vaulina-yu-e/",
+  "Геометрия": "https://gdz.ru/class-7/geometria/atanasyan-7-9/",
+  "Алгебра": "https://gdz.ru/class-9/algebra/mordkovich-10",
+  "Физика": "https://www.euroki.org/gdz/ru/fizika/9_klass/a_v_peryshkin_e_m_gutnik",
+  "Химия": "https://gomolog.ru/reshebniki/9-klass/kuznecova-2019.html",
+  "Информатика": "https://5urokov.ru/gdz/bosova_9_uch",
+  "ОБЖ": "https://gdzznaniya.ru/obzh-9/smirnov/",
+  "Ист.России.Всеоб.ист": "https://megaresheba.ru/gdz/istorija/9-klass/arsentjev",
+  "География": "https://www.euroki.org/gdz/ru/geografiya/9_klass/konturnye-karty-po-geografii-9-klass-fgos-673",
+  "Рус. язык": "https://gdz.ru/class-9/russkii_yazik/barhudarov-kruchkov-9/",
+  "Родной язык": "https://gdz.ru/class-9/russkii_yazik/barhudarov-kruchkov-9/"
 }
 
 function start() {
