@@ -35,7 +35,7 @@ let gdzBySubjects = {
     "Учебник": "https://megaresheba.ru/gdz/istorija/9-klass/arsentjev"
   },
   "География": {
-    "Учебник": "https://www.euroki.org/gdz/ru/geografiya/9_klass/konturnye-karty-po-geografii-9-klass-fgos-673",
+    "Учебник": "https://resheba.me/gdz/geografija/9-klass/alekseev-bolysov",
     "Контурные карты": "https://www.euroki.org/gdz/ru/geografiya/9_klass/konturnye-karty-po-geografii-9-klass-fgos-673"
   },
   "Рус. язык": {
@@ -45,6 +45,9 @@ let gdzBySubjects = {
     "Учебник": "https://gdz.ru/class-9/russkii_yazik/barhudarov-kruchkov-9/"
   },
   "Литература": {
+    "Учебник": "https://gdz.ru/class-9/literatura/korovina/"
+  },
+  "Родная литература": {
     "Учебник": "https://gdz.ru/class-9/literatura/korovina/"
   },
   "Биология": {
