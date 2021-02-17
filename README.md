@@ -11,4 +11,4 @@ Also it have some improvements for https://schools.school.mosreg.ru/ (by default
 Installation:
 
 1. Enable dev mode in chrome://extensions/
-2. Press "Load unpacked" and choose the extension folder
+2. Press "Load unpacked" and choose the extension folder.
