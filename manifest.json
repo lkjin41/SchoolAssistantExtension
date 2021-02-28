@@ -18,6 +18,10 @@
     {
       "matches": ["https://obrazovaka.ru/*", "http://obrazovaka.ru/*"],
       "js": ["obrazovaka.min.js"]
+    },
+    {
+      "matches": ["https://znanija.com/*", "http://znanija.com/*"],
+      "js": ["znanija.js"]
     }
   ]
 }
