@@ -2,7 +2,7 @@
 
 This is an extension that helps with your homework.
 
-Extension can show answers for [Resh](https://resh.edu.ru) / [Obrazovaka](https://obrazovaka.ru) / [Imumk](https://mo.imumk.ru).
+Extension can show answers for [SkySmart](https://edu.skysmart.ru) / [Resh](https://resh.edu.ru) / [Obrazovaka](https://obrazovaka.ru) / [Imumk](https://mo.imumk.ru).
 For that, it uses scripts from my repos.
 
 It provides some improvements for https://schools.school.mosreg.ru/ (by default it has GDZ for my school curricula and schedule but you can change it in schoolmosreg.js):
