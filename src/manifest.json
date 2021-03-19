@@ -5,23 +5,34 @@
   "content_scripts": [
     {
       "matches": ["https://schools.school.mosreg.ru/*", "http://schools.school.mosreg.ru/*"],
-      "js": ["schoolmosreg.js"]
+      "js": ["schoolmosreg/main.js"]
     },
     {
       "matches": ["https://resh.edu.ru/*", "http://resh.edu.ru/*"],
-      "js": ["resh.min.js"]
+      "js": ["resh/main.js"]
     },
     {
       "matches": ["https://mo.imumk.ru/*", "http://mo.imumk.ru/*"],
-      "js": ["imumk.js"]
+      "js": ["imumk/main.js"]
     },
     {
       "matches": ["https://obrazovaka.ru/*", "http://obrazovaka.ru/*"],
-      "js": ["obrazovaka.min.js"]
+      "js": ["obrazovaka/main.js"]
     },
     {
       "matches": ["https://znanija.com/*", "http://znanija.com/*"],
-      "js": ["znanija.js"]
+      "js": ["znanija/main.js"]
+    },
+    {
+      "matches": ["https://edu.skysmart.ru/lesson/*", "http://edu.skysmart.ru/lesson/*"],
+      "js": [
+        "skysmart/token-storage.js",
+        "skysmart/steps-view.js",
+        "skysmart/steps-presenter.js",
+        "skysmart/answers-marker.js",
+        "skysmart/katex.min.js",
+        "skysmart/main.js"
+      ]
     }
   ]
 }
