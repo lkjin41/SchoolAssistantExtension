@@ -1,12 +1,11 @@
 class TokenStorage {
   static getToken() {
-    return TokenStorage.#getCookie("token_edu_skysmart")
-  }
+    var tokenCollection = JSON.parse(localStorage['edu-token-collection']);
+    var token = tokenCollection[Object.keys(tokenCollection)[0]].token;
 
-  static #getCookie(name) {
-    let matches = document.cookie.match(new RegExp(
-      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-    ));
-    return matches ? decodeURIComponent(matches[1]) : undefined;
+    if (token == undefined) {
+      alert("[SchoolAssistantExtension] Ошибка. Авторизуйтесь заново в системе");
+    }
+    return token;
   }
 }
