@@ -13,6 +13,7 @@ class AnswersMarker {
     doc = AnswersMarker.#fixTables(doc);
     doc = AnswersMarker.#strikeOutItems(doc);
     doc = AnswersMarker.#addImageTiles(doc);
+
     return doc;
   }
 
@@ -42,9 +43,13 @@ class AnswersMarker {
     }
 
     function renderElement(element) {
-      var expression = element.innerText;
-      if(!containsNonLatinCodepoints(expression)) {
-        element.innerHTML = katex.renderToString(expression);
+      try {
+        var expression = element.innerText;
+        if(!containsNonLatinCodepoints(expression)) {
+          element.innerHTML = katex.renderToString(expression);
+        }
+      } catch (e) {
+        console.error(e);
       }
     }
 
@@ -57,7 +62,7 @@ class AnswersMarker {
 
   static #setStyles(doc) {
     var styles = `
-					<style>
+          <style>
             .correct {color: red; font-weight: bold; outline: 1px solid red; opacity:100%!important}
             .striked {color: red; font-weight: bold; outline: 1px solid red; opacity:100%!important; text-decoration: line-through}
             vim-input-answers {color: red; font-weight: bold; outline: 1px solid red; opacity:100%!important}
@@ -78,7 +83,7 @@ class AnswersMarker {
             td{outline: 1px solid;}
             body {display: block; margin-left: auto; margin-right: auto; width: 760px;}
             ` + katexCSS + `
-					</style>`;
+          </style>`;
     doc.head.innerHTML += styles;
     return doc;
   }
@@ -113,6 +118,7 @@ class AnswersMarker {
   }
 
   static #addBreakLines(doc) {
+    doc.body.innerHTML = doc.body.outerHTML.replaceAll('</vim-dnd-image-drags>', '</vim-dnd-image-drags><br><br>');
     doc.body.innerHTML = doc.body.outerHTML.replaceAll('</vim-dnd-group-drags>', '</vim-dnd-group-drags><br><br>');
     doc.body.innerHTML = doc.body.outerHTML.replaceAll('</vim-input-item>', '</vim-input-item><br>');
     doc.body.innerHTML = doc.body.outerHTML.replaceAll('vim-dnd-image-set-images>', '<br><br><vim-dnd-image-set-images>');
