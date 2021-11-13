@@ -1,11 +1,13 @@
 let schedule = [
-  "8:15 - 8:55",
-  "9:05 - 9:45",
-  "9:55 - 10:35",
-  "10:50 - 11:30",
-  "11:45 - 12:25",
-  "12:40 - 13:20",
-  "13:40 - 14:20"
+  "8:10 - 8:50",
+  "9:00 - 9:40",
+  "10:00 - 10:40",
+  "11:00 - 11:40",
+  "11:50 - 12:30",
+  "12:50 - 13:30",
+  "13:50 - 14:30",
+  "14:40 - 15:20",
+  "15:40 - 16:20 ?"
 ];
 
 let gdzBySubjects = {
@@ -86,7 +88,7 @@ function start() {
       underLessonTitleElement.style = "white-space: nowrap; display: table-caption; margin-top: 5px;";
       replaceLessonNumberTitleHTML(underLessonTitleElement);
       insertSchedule(underLessonTitleElement, i);
-      insertGdzButton(underLessonTitleElement);
+      // insertGdzButton(underLessonTitleElement);
     }
   }
 }
