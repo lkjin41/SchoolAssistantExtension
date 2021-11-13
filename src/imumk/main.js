@@ -17,7 +17,7 @@ function showAnswers() {
 
 function addAnswersButton() {
   if(actualDocument.getElementsByClassName("invisible")[0].style.visibility == "visible") {
-    actualDocument.getElementById("headertext").innerHTML += "<button id=\"" + answersButtonId + "\" onclick=\"blob=new Blob([CourseConfig.contentTask],{type:&quot;text/xml&quot;}),url=window.URL.createObjectURL(blob);window.open(url),window.URL.revokeObjectURL(url);\">Ответ</button>"
+    actualDocument.getElementsByClassName("header")[0].innerHTML += "<button id=\"" + answersButtonId + "\" onclick=\"blob=new Blob([CourseConfig.contentTask],{type:&quot;text/xml&quot;}),url=window.URL.createObjectURL(blob);window.open(url),window.URL.revokeObjectURL(url);\">Ответ</button>"
     return true;
   }
   return false;
