@@ -33,6 +33,10 @@
         "skysmart/katex.min.js",
         "skysmart/main.js"
       ]
+    },
+    {
+      "matches": ["https://quizlet.com/*", "http://quizlet.com/*"],
+      "js": ["quizlet/main.js"]
     }
   ]
 }
