@@ -2,7 +2,7 @@ let answersButtonId = "i8dusadoSAI3";
 let addAnswersButtonInterval;
 var blob;
 var actualDocument;
-var headerText;
+var rightBlock;
 
 function showAnswers() {
   try {
@@ -16,8 +16,8 @@ function showAnswers() {
 }
 
 function addAnswersButton() {
-  if(actualDocument.getElementsByClassName("invisible")[0].style.visibility == "visible") {
-    actualDocument.getElementsByClassName("header")[0].innerHTML += "<button id=\"" + answersButtonId + "\" onclick=\"blob=new Blob([CourseConfig.contentTask],{type:&quot;text/xml&quot;}),url=window.URL.createObjectURL(blob);window.open(url),window.URL.revokeObjectURL(url);\">Ответ</button>"
+  if(actualDocument.readyState == 'complete') {
+    actualDocument.getElementsByClassName("right-block")[0].innerHTML += "<button id=\"" + answersButtonId + "\" onclick=\"blob=new Blob([CourseConfig.contentTask],{type:&quot;text/xml&quot;}),url=window.URL.createObjectURL(blob);window.open(url),window.URL.revokeObjectURL(url);\">Ответ</button>"
     return true;
   }
   return false;
@@ -25,14 +25,15 @@ function addAnswersButton() {
 
 function tryAddAnswersButton() {
   let addAnswersButtonInterval = setInterval(function() {
-    if(document.getElementById("courseframe").contentWindow.document != null) {
-      actualDocument = document.getElementById("courseframe").contentWindow.document
+    if(document.getElementsByClassName('fullsize')[0] != null) {
+      var actualIframe = document.getElementsByClassName('fullsize')[0];
+      actualDocument = actualIframe.contentWindow.document || actualIframe.contentDocument;
       if(!actualDocument.getElementById(answersButtonId)) {
-        headerText = actualDocument.querySelectorAll("#headertext")
+        rightBlock = actualDocument.querySelector('right-block')
         addAnswersButton();
       }
     }
-  }, 500);
+  }, 1000);
   console.log("intervalId = " + addAnswersButtonInterval);
 }
 
